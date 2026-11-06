@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.75; max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; color: #1c1c1e; }
+  h1, h2, h3 { line-height: 1.35; } h2 { margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: .2em; }
+  table { border-collapse: collapse; width: 100%; font-size: .92em; } th, td { border: 1px solid #ddd; padding: 6px 8px; vertical-align: top; text-align: left; }
+  blockquote { margin: 1em 0; padding: .4em 1em; background: #f5f5f7; border-left: 4px solid #bbb; }
+  code { background: #f2f2f2; padding: 0 .25em; border-radius: 3px; }
+  @media (prefers-color-scheme: dark) { body { background: #000; color: #f2f2f7; } blockquote, code { background: #1c1c1e; } th, td, h2 { border-color: #3a3a3c; } }
+</style>
+</head>
+<body>
+<h1>Privacy Policy (Draft v2, English)</h1>
+<blockquote><strong>Draft.</strong> Fields marked [TO FILL] must be completed, and a lawyer should review it before publication. This is not legal advice. See <a href="OPEN_QUESTIONS.md"><code>OPEN_QUESTIONS.md</code></a>.</blockquote>
+<blockquote>Japanese version: <a href="PRIVACY_POLICY.ja.md"><code>PRIVACY_POLICY.ja.md</code></a> (keep both versions identical in substance).</blockquote>
+<blockquote>Rule: this text must match the code. Anything not yet implemented is written as "planned" and marked <strong>[CONFIRM AFTER IMPLEMENTATION]</strong>.</blockquote>
+<hr>
+<p><strong>HealthPower Privacy Policy</strong></p>
+<ul>
+<li>Effective date: [TO FILL]</li>
+<li>Provider: [TO FILL: company or individual name]</li>
+<li>App name: [TO FILL: final app name] (the working name is "HealthPower")</li>
+</ul>
+<h2>1. The short version</h2>
+<ul>
+<li>Your records are stored <strong>on your iPhone</strong>.</li>
+<li>There are <strong>no accounts</strong>.</li>
+<li>The App does <strong>not send your records to the provider</strong> (the provider runs no server for the App).</li>
+<li>There is <strong>no advertising, no analytics, and no tracking</strong>. The App contains no SDKs for these.</li>
+<li>Your records are <strong>not sold or given</strong> to anyone.</li>
+<li>For Apple Health, the App handles <strong>only the items you allow</strong>. Every item is <strong>optional</strong> and can be stopped later.</li>
+<li>iCloud sync between your devices is <strong>not in this version (v1.0)</strong>. If it is added later, it will use <strong>only your own iCloud</strong> and will <strong>not include information that came from Apple Health</strong> (see Section 6).</li>
+<li>If you use the Apple Watch app, information moves <strong>only between your iPhone and your Apple Watch (an OS mechanism)</strong>, never through a provider server (see Section 3).</li>
+</ul>
+<h2>2. Information the App handles, and why</h2>
+<p>"Handles" means storing or calculating on your iPhone. It does not mean the provider receives it.</p>
+<h3>2-1. Information you enter (all optional)</h3>
+<table><thead><tr><th>Information</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>Birth year (month and day are not stored)</td><td>To estimate basal metabolism from age</td></tr>
+<tr><td>Sex ("Prefer not to say" is available)</td><td>To reflect differences in the metabolic formula</td></tr>
+<tr><td>Height</td><td>To estimate basal metabolism</td></tr>
+<tr><td>Body weight, body fat %, body measurements</td><td>To show body changes; to calculate maintenance calories and food targets</td></tr>
+<tr><td>Goals (muscle, fat, activity, pace; target weight and deadline)</td><td>To calculate targets and show progress</td></tr>
+<tr><td>Current activity level</td><td>To estimate maintenance calories until enough data is recorded</td></tr>
+<tr><td>Workout records (exercises, weight, reps, time, distance, machine speed and incline, notes)</td><td>History, previous values, personal records, next-target suggestions</td></tr>
+<tr><td>Food, drink and supplement records</td><td>Totals and comparison with targets</td></tr>
+<tr><td>Supplement setup (name, timing, nutrient amounts, reminder times), and "stacks" for taking several supplements together (name, supplements in it, timing and weekdays)</td><td>Reminders; including nutrients in totals; logging "taken" for the whole set at once (taking a stack logs each supplement in it)</td></tr>
+<tr><td>Supplement stacks (name, timing, weekdays, order, shown or hidden; stored on this device only, never sent out)</td><td>Taking several supplements at once; grouping reminders</td></tr>
+<tr><td>Daily "Today's HP" change and maximum HP (<strong>scores only</strong>)</td><td>A <strong>game score calculated on your iPhone</strong> from sleep, activity, workouts, food and water, saved once a day and shown on Today. The underlying Health data is not saved with the score. <strong>Not included in iCloud sync.</strong> Included in export, restore and "Delete all data"</td></tr>
+<tr><td>Manually entered sleep, sleep-quality notes</td><td>To review your sleep</td></tr>
+<tr><td>Exercise notes and links</td><td>Your own memos</td></tr>
+<tr><td>Settings (units, rest time, notifications, etc.)</td><td>To make the App work the way you like</td></tr>
+</tbody></table>
+<p>Features that depend on information you did not enter (for example, automatic food-target calculation) may be unavailable.</p>
+<h3>2-2. Information <strong>read</strong> from Apple Health (you can allow or stop each item)</h3>
+<table><thead><tr><th>Item read</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>Steps, stand time, exercise minutes</td><td>Show daily activity; adjust food targets to activity</td></tr>
+<tr><td>Active and basal energy</td><td>Same as above</td></tr>
+<tr><td>Body weight, body fat %</td><td>Show body changes; calculate maintenance calories</td></tr>
+<tr><td>Sleep (duration and stages)</td><td>Show sleep duration and stages</td></tr>
+<tr><td>Date of birth (only the <strong>year</strong> is kept), sex, height</td><td>To save you typing. Read <strong>only when you press "Read from Apple Health"</strong> in Settings</td></tr>
+<tr><td>Heart rate during workouts (measured by Apple Watch, etc.)</td><td>To show average, maximum, chart and zones on the workout summary and history</td></tr>
+<tr><td>Resting heart rate, heart rate variability (SDNN)</td><td>To show a 30-day trend and a 7-day comparison under "Recovery" in Train</td></tr>
+<tr><td>Heart-rate intensity (time spent at high heart rate = total and longest stretch at 80% or more of maximum heart rate; peak)</td><td>To show on the workout summary and history. <strong>Calculated from the heart rate read each time it is shown. Not saved. No "score" is created</strong></td></tr>
+<tr><td>Workouts (including other apps' workouts)</td><td>To list activity in Train. <strong>Also read to check whether another app's workout, such as Apple's Workout app, overlaps this App's workout by half or more (existence check only)</strong>. If it overlaps, the App does not write its own workout to Health, to avoid duplicates. <strong>The content of other apps' workouts is not saved, synced or sent anywhere</strong></td></tr>
+</tbody></table>
+<ul>
+<li><strong>Heart rate, resting heart rate and heart rate variability are read-only. The App does not store them in its own database, does not sync them and does not send them anywhere</strong> (it reads them from Health each time they are shown).</li>
+<li><strong>Live heart rate from Apple Watch</strong>: during a workout, heart-rate values arriving from the Watch are held <strong>only in the App's memory</strong>, so the summary can appear without waiting for Health. <strong>They are not saved and disappear when the App is closed.</strong></li>
+<li>The App does <strong>not</strong> read blood pressure, blood glucose, location, other apps' food entries, or medical records.</li>
+</ul>
+<h3>2-3. Information <strong>written</strong> to Apple Health (you can allow or stop each item)</h3>
+<table><thead><tr><th>Item written</th><th>Purpose</th><th>Default</th></tr></thead><tbody>
+<tr><td>Completed workouts (strength and cardio)</td><td>To keep completed workouts in Health too. The activity type follows the exercises (a workout of cardio exercises only becomes running, walking, cycling, rowing, swimming, elliptical, stairs, jump rope, etc.; a workout that includes strength exercises is Traditional Strength Training). <strong>Distance is not written.</strong> If another app's workout overlaps by half or more, the App does not write its own, to avoid duplicates (so the App's record may not appear in Health). <strong>When the Apple Watch app measured the workout, the Watch saves it with heart rate and energy</strong> (the iPhone does not write it twice)</td><td>On after you connect (can be turned off in Settings)</td></tr>
+<tr><td>Body weight and body fat % (<strong>only values you entered by hand</strong>)</td><td>To keep values you entered in Health too</td><td><strong>Off</strong>; only when you turn it on in Settings</td></tr>
+<tr><td>Amounts of supplements you took (per nutrient: vitamins, minerals, caffeine, protein, fat, carbohydrate, energy (kcal), etc.)</td><td>To keep amounts you took in Health too</td><td><strong>Off</strong>; only for supplements where you chose a nutrient, and only when you turn it on in Settings</td></tr>
+<tr><td>Nutrients of food and drinks (vitamins, minerals, water volume (mL) and caffeine (mg) of drinks)</td><td>To keep what you logged in Health too. <strong>Food calories, protein, fat and carbohydrate are not written to Health</strong></td><td><strong>Off</strong>; written from records made after you turn it on in Settings</td></tr>
+</tbody></table>
+<ul>
+<li>The Health permission sheet appears when you connect and asks about the items together (if items are added later, such as heart rate, the App may ask again from a prompt in Settings). You can allow or deny each item. Later changes are made in the Health app.</li>
+<li>When you edit or delete a record in the App, the entry written to Health is edited or deleted too (for supplement entries: [CONFIRM whether "delete all data" also removes them; see OPEN_QUESTIONS.md item 9]).</li>
+<li>You can also delete entries written to Health from the Health app.</li>
+</ul>
+<h3>2-4. Limits on the use of Health information</h3>
+<p>Health information is used <strong>only to provide the App's features</strong>. <strong>It is not used for advertising, marketing, sale, or sharing with third parties.</strong></p>
+<h3>2-5. Information the App does not handle</h3>
+<p>Name, email address, phone number, address, location, contacts, photos, advertising identifiers, the month and day of your birth, and tracking by device identifiers.</p>
+<h2>3. Transmission outside your device</h2>
+<ul>
+<li>The App has <strong>no feature that sends your records to servers on the internet</strong>, and contains no networking SDKs.</li>
+<li>Communication with Apple Health happens <strong>inside your iPhone</strong>.</li>
+<li>Notifications (end of rest timer, supplement reminders) are produced <strong>only on your iPhone</strong>.</li>
+<li><strong>Apple Watch app:</strong> when you start a workout on the iPhone, the paired Apple Watch app measures a strength-training workout and saves heart rate and energy to Apple Health. Live heart rate is passed to the iPhone <strong>only between the iPhone and the Watch (an OS mechanism)</strong>, never through a provider server. The Watch app runs only during a workout. The iPhone app works without a Watch.</li>
+<li><strong>Live Activity</strong> (Lock Screen / Dynamic Island): during a workout it shows records you entered (exercise, set progress, elapsed time, rest remaining). It runs <strong>only on your iPhone</strong>, with no push service or server, and can be turned off in iOS Settings.</li>
+<li><strong>Background audio:</strong> only when you turn on "Play with the screen off" in Settings (off by default), the App plays silent audio during a rest interval to keep the timer running and a short beep when it ends. It does not record sound or collect audio data.</li>
+<li>In the following cases, another app or service opens <strong>only when you tap</strong>. After that, that service's own privacy policy applies, and the provider cannot control it.</li>
+<li>Tapping "Search tutorials on YouTube" on an exercise screen (the search words are passed to YouTube in your browser)</li>
+<li>Tapping a link you pasted in an exercise note</li>
+<li>When you <strong>export</strong>, the file is handed to the destination you choose (Files, AirDrop, another app, etc.). See Section 7.</li>
+</ul>
+<h2>4. The "import an AI app's answer" feature</h2>
+<ul>
+<li>The App has <strong>no AI inside</strong>. The App <strong>sends nothing to any AI</strong>.</li>
+<li>You can show a meal photo to an AI app yourself and <strong>paste the answer (text) into HealthPower</strong>. Only then does the App check the text, <strong>show it to you, and save it only when you tap "Import"</strong>. The same applies when text is passed via Shortcuts or Siri (a confirmation screen always appears before saving).</li>
+<li>The App does not handle photos.</li>
+<li>What you send to an AI app is your decision. AI apps and their providers handle information under their own terms and privacy policies, which the provider of this App cannot control. <strong>Check those terms before you give health-related information to an AI app.</strong></li>
+<li>AI answers are rough estimates and can be wrong. Imported meals are marked "estimate" and can be deleted later.</li>
+</ul>
+<h2>5. Third parties, advertising, analytics</h2>
+<ul>
+<li>Your information does not reach the provider, so it cannot be shared with or sold to third parties.</li>
+<li>The App shows no ads. It does not analyze usage or track your behavior.</li>
+<li>Note: through Apple mechanisms (crash reports, TestFlight feedback, etc.), the provider may receive diagnostic information via Apple <strong>only if you choose to share it</strong>. That is governed by Apple's privacy policy.</li>
+<li>Purchase is a one-time App Store purchase. Apple handles payment information; it does not reach the provider.</li>
+</ul>
+<h2>6. iCloud sync (planned for v1.1 or later; not in v1.0)</h2>
+<blockquote><strong>iCloud sync is not in v1.0 (postponed to v1.1 or later on 2026-11-05). This section describes a feature that is not implemented yet.</strong> After it is implemented and tested, items marked <strong>[CONFIRM AFTER IMPLEMENTATION]</strong> will be reviewed and the effective date updated. For the v1.0 release, this section will be kept as "planned" or removed (OPEN_QUESTIONS.md item 2).</blockquote>
+<p><strong>Planned (the policy has been decided)</strong></p>
+<ul>
+<li>Sync is an <strong>optional setting</strong>. The planned default is "on", and you can turn it off at any time. All features work with sync off. [CONFIRM AFTER IMPLEMENTATION]</li>
+<li>Only <strong>your own iCloud</strong> is used. The provider's servers are not used. Data is stored in Apple's iCloud, and <strong>the provider cannot see it</strong>.</li>
+<li>Planned to sync: <strong>records you entered</strong> (workouts, food and drinks, foods, supplements, body records you entered by hand, settings). [CONFIRM AFTER IMPLEMENTATION]</li>
+<li><strong>Not synced:</strong> <strong>information read from Apple Health</strong> (weight, body fat, sleep, steps, active energy, etc.) and daily targets calculated from it, and the <strong>"Today's HP" scores</strong>, are <strong>not placed in iCloud</strong> (also not in v1.1); each device reads Health again. In the current design, <strong>sleep records (including hand-entered ones) stay on each device</strong> and are not synced. [CONFIRM AFTER IMPLEMENTATION]</li>
+<li>Turning sync off <strong>does not automatically delete data in iCloud</strong>. Deleting iCloud data requires a separate action (planned: "Delete iCloud data"). [CONFIRM AFTER IMPLEMENTATION]</li>
+<li>Sync status and last sync time are planned to be shown in Settings. If the network is unavailable, your records stay on the iPhone and sync later.</li>
+<li><strong>About encryption:</strong> the App adds <strong>no encryption of its own</strong>. Data in iCloud is protected by Apple's mechanisms. How far that protection goes (for example, whether you use iCloud "Advanced Data Protection") <strong>depends on your Apple Account settings</strong>. [CONFIRM AFTER IMPLEMENTATION]</li>
+<li>If you delete the App while data exists in iCloud, the data in iCloud remains.</li>
+</ul>
+<h2>7. Storage, export, restore, deletion</h2>
+<ul>
+<li><strong>Where:</strong> on your iPhone, in the App's own storage area.</li>
+<li><strong>Protection:</strong> covered by iOS's standard data protection (tied to your passcode). <strong>The App does not apply its own encryption.</strong></li>
+<li><strong>In-app automatic backup:</strong> when you open the App, it saves a copy of the last 7 days on your iPhone once a day, so you do not lose data when the App is updated. <strong>Records imported from Apple Health (weight, sleep, etc.) are not included</strong> (they are re-imported from Health after a restore). The file protection level lets it be read after the device is first unlocked. "Delete all data" also removes this copy. It is not sent anywhere.</li>
+<li><strong>Device backups:</strong> depending on your iPhone settings, iOS may include the App's data in backups (iCloud Backup, computer backup). [CONFIRM the scope; OPEN_QUESTIONS.md item 6]</li>
+<li><strong>Export:</strong> in Settings &gt; Data &amp; Privacy, you can take out all data as <strong>JSON</strong> or <strong>CSV</strong>. The format, fields and units are visible on the "Data fields and units" screen. You can <strong>choose whether to include records imported from Apple Health</strong> (default: included). <strong>Exported files are not encrypted.</strong> You choose the destination and are responsible for how the file is handled afterwards.</li>
+<li><strong>Restore:</strong> you can restore from a JSON file exported by the App. It does not delete current data, and importing the same file twice does not create duplicates. It can be used when you change phones.</li>
+<li><strong>Deletion:</strong> you can delete individual records at any time. "Delete all data" in Data &amp; Privacy removes everything (this cannot be undone), with a choice of whether to also remove what the App wrote to Health. Deleting the App removes the data on the iPhone.</li>
+<li><strong>Please note:</strong> because the provider does not hold your data, it cannot restore it if your device is lost or broken. <strong>Please save exports regularly.</strong></li>
+</ul>
+<h2>8. Medical notice</h2>
+<ul>
+<li>Goals and numbers in the App are <strong>estimates</strong> based on what you enter and general formulas. They are not medical advice, diagnosis or treatment.</li>
+<li><strong>"Today's HP" is a game score calculated on your device</strong> from sleep, activity, workouts, food and water. It is not a diagnosis or assessment of your health, nor medical advice.</li>
+<li><strong>Maximum heart rate on heart-rate screens is an estimated guide.</strong> <strong>Heart-rate intensity (time at high heart rate, peak) is a reference figure calculated from the heart rate read, not an evaluation or diagnosis of exercise strength or your condition, nor medical advice.</strong></li>
+<li>Nutrient reference values are general values for healthy adults, not your personal requirement or medical advice.</li>
+<li>If you have health concerns or a medical condition, are pregnant or nursing, or struggle with eating, consult a <strong>doctor or registered dietitian</strong>.</li>
+<li>Automatic food-target calculation is not provided for users under 18 (you can still set targets by hand).</li>
+<li>Safety rules (such as the lower limit on calorie targets) are shown in the App. The full wording is in <code>DISCLAIMER.md</code>.</li>
+</ul>
+<h2>9. Children</h2>
+<ul>
+<li>Users under 18 cannot use automatic food-target calculation. The daily vitamin/mineral reference values are shown only for adults aged 18 to 64.</li>
+<li>Age policy and guardian consent: [TO FILL] (align with the App Store age rating answers; OPEN_QUESTIONS.md item 8)</li>
+<li>The App does not knowingly collect children's information (and in any case nothing reaches the provider).</li>
+</ul>
+<h2>10. Changes to this policy</h2>
+<p>When we change this policy, we will announce it on this page and update the effective date. If the information handled or its purposes change, we will also notify you in the App.</p>
+<h2>11. Contact</h2>
+<ul>
+<li>Provider: [TO FILL]</li>
+<li>Email: [TO FILL]</li>
+<li>Address: [TO FILL: only if legally required]</li>
+<li>Policy URL: [TO FILL: the URL to register in App Store Connect]</li>
+</ul>
+</body>
+</html>
